@@ -1,0 +1,103 @@
+@use 'var';
+@mixin texto-primary {
+    text-align: center;
+    color: var.$text-color-primary;
+    font-size: .72rem;
+    text-decoration: none;
+    letter-spacing: .05rem;
+}
+.header{
+    background-color: var.$background-color-secondary;
+    width: 100%;
+    height: 3.25rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    &-logo{
+        width: 1.975rem;
+        height: 2.2rem;
+        margin: 0 .8rem;
+        &__img{
+            width: 1.975rem;
+            height: 2.2rem; 
+
+        }
+    }
+    &__link{
+        padding: 1.13rem 0;
+        margin: 0 1.1rem;
+        @include texto-primary();
+        position: relative;
+        overflow: hidden;
+
+        &::after{
+            content: '';
+            width: 100%;
+            background-color: #2f82e0;
+            height: .22rem;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            transform: translateY(4px);
+            transition: transform 0.3s ease;
+        }
+
+        &:hover::after{
+            transform: translateY(0);
+
+        }  
+    }
+
+    &__about{
+        padding: .4rem 2rem;
+        border-left: .1rem solid white;
+        @include texto-primary();
+    }
+    
+}
+
+.session{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    &__ico{
+        width: 1.75rem;
+        margin: 0 0.625rem;
+        fill: var.$text-color-primary
+    }
+
+    &-login{
+        display: flex;
+        justify-content: center;  
+        align-items: center;
+        padding:0 1.85rem;
+  
+        &__ico{
+            width: 1.6rem;
+            height: 1.6em;
+            fill: var.$text-color-primary;
+            margin-right: .7rem;
+           
+        }
+        &__link{
+            @include texto-primary();
+        }
+    }
+
+    &__get{
+        height: 100%;
+        padding:0 1.25rem;
+        line-height: 3.25rem;
+        background-color: #2f82e0;
+        @include texto-primary();
+        color: white;
+        font-weight: bold;
+        letter-spacing: .1rem;
+    }
+}
