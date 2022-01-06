@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./style/app.css">
+    <link rel="stylesheet" href="./style/glider.min.css">
 </head>
 <body>
     <!-- header  -->
@@ -28,5 +29,45 @@
             <a class="session__get" href="#">CONSIGUE EPIC GAMES</a>
         </div>
     </header>
+    <!-- fin header  -->
+
+    <section class="carousel">
+        <div class="contenedor">
+            <button class="contenedor-previous">
+                <svg class="contenedor-previous__ico" viewBox="0 0 512 512"><path  d="M256 504C119 504 8 393 8 256S119 8 256 8s248 111 248 248-111 248-248 248zm27.5-379.5l-123 123c-4.7 4.7-4.7 12.3 0 17l123 123c7.6 7.6 20.5 2.2 20.5-8.5V133c0-10.7-12.9-16.1-20.5-8.5z" class=""></path></svg>
+            </button>
+            <div id="glider" class="list">
+                <div class="element">
+                    <img class="element__img" src="./img/carousel/fortnite.webp" alt="">
+                    <span class="element__title">FORTNITE</span>
+                </div>
+                <div class="element">
+                    <img class="element__img" src="./img/carousel/rocketL.webp" alt="">
+                    <span class="element__title">ROCKET LEAGUE</span>
+                </div>
+                <div class="element">
+                    <img class="element__img" src="./img/carousel/store.jpg" alt="">
+                    <span class="element__title">STORE</span>
+                </div>
+                <div class="element">
+                    <img class="element__img" src="./img/carousel/BATTLEb.jpg" alt="">
+                    <span class="element__title">BATTLE BREAKERS</span>
+                </div>
+                <div class="element">
+                    <img class="element__img" src="./img/carousel/unreal tournament.jpg" alt="">
+                    <span class="element__title">UNREAL TOURNAMENT</span>
+                </div>
+                <div class="element">
+                    <img class="element__img" src="./img/carousel/unrealengine.jpg" alt="">
+                    <span class="element__title">UNREAL ENGINE</span>
+                </div>
+            </div> 
+            <button aria-label="next" class="contenedor-next">
+                <svg class="contenedor-next__ico" viewBox="0 0 512 512" ><path d="M256 8c137 0 248 111 248 248S393 504 256 504 8 393 8 256 119 8 256 8zm-27.5 379.5l123-123c4.7-4.7 4.7-12.3 0-17l-123-123c-7.6-7.6-20.5-2.2-20.5 8.5v246c0 10.7 12.9 16.1 20.5 8.5z" class=""></path></svg>
+            </button>
+        </div>
+    </section>
+    <script src="./js/glider.min.js"></script>
+    <script src="./js/app.js"></script>
 </body>
 </html>
