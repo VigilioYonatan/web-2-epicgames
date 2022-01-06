@@ -33,38 +33,58 @@
 
     <section class="carousel">
         <div class="contenedor">
-            <button class="contenedor-previous">
-                <svg class="contenedor-previous__ico" viewBox="0 0 512 512"><path  d="M256 504C119 504 8 393 8 256S119 8 256 8s248 111 248 248-111 248-248 248zm27.5-379.5l-123 123c-4.7 4.7-4.7 12.3 0 17l123 123c7.6 7.6 20.5 2.2 20.5-8.5V133c0-10.7-12.9-16.1-20.5-8.5z" class=""></path></svg>
-            </button>
+            
             <div id="glider" class="list">
+                 
                 <div class="element">
                     <img class="element__img" src="./img/carousel/fortnite.webp" alt="">
-                    <span class="element__title">FORTNITE</span>
+                    <div class="element-link">
+                        <span class="element-link__title">FORTNITE</span>
+                        <a class="element-link__enlace" href="">EXPLORA</a>
+                    </div>
                 </div>
                 <div class="element">
                     <img class="element__img" src="./img/carousel/rocketL.webp" alt="">
-                    <span class="element__title">ROCKET LEAGUE</span>
+                    <div class="element-link">
+                        <span class="element-link__title">ROCKET LEAGUE</span>
+                        <a class="element-link__enlace" href="">EXPLORA</a>
+                    </div>
                 </div>
                 <div class="element">
                     <img class="element__img" src="./img/carousel/store.jpg" alt="">
-                    <span class="element__title">STORE</span>
+                    <div class="element-link">
+                        <span class="element-link__title">STORE</span>
+                        <a class="element-link__enlace" href="">EXPLORA</a>
+                    </div>
                 </div>
                 <div class="element">
                     <img class="element__img" src="./img/carousel/BATTLEb.jpg" alt="">
-                    <span class="element__title">BATTLE BREAKERS</span>
+                    <div class="element-link">
+                        <span class="element-link__title">BATTLE BREAKERS</span>
+                        <a class="element-link__enlace" href="">EXPLORA</a>
+                    </div>
                 </div>
                 <div class="element">
                     <img class="element__img" src="./img/carousel/unreal tournament.jpg" alt="">
-                    <span class="element__title">UNREAL TOURNAMENT</span>
+                    <div class="element-link">
+                        <span class="element-link__title">UNREAL TOURNAMENT</span>
+                        <a class="element-link__enlace" href="">EXPLORA</a>
+                    </div>
                 </div>
                 <div class="element">
                     <img class="element__img" src="./img/carousel/unrealengine.jpg" alt="">
-                    <span class="element__title">UNREAL ENGINE</span>
+                    <div class="element-link">
+                        <span class="element-link__title">UNREAL ENGINE</span>
+                        <a class="element-link__enlace" href="">EXPLORA</a>
+                    </div>
                 </div>
             </div> 
-            <button aria-label="next" class="contenedor-next">
-                <svg class="contenedor-next__ico" viewBox="0 0 512 512" ><path d="M256 8c137 0 248 111 248 248S393 504 256 504 8 393 8 256 119 8 256 8zm-27.5 379.5l123-123c4.7-4.7 4.7-12.3 0-17l-123-123c-7.6-7.6-20.5-2.2-20.5 8.5v246c0 10.7 12.9 16.1 20.5 8.5z" class=""></path></svg>
+            <button aria-label="previous" class="contenedor-previous">
+                <svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="chevron-left" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512" ><path d="M231.293 473.899l19.799-19.799c4.686-4.686 4.686-12.284 0-16.971L70.393 256 251.092 74.87c4.686-4.686 4.686-12.284 0-16.971L231.293 38.1c-4.686-4.686-12.284-4.686-16.971 0L4.908 247.515c-4.686 4.686-4.686 12.284 0 16.971L214.322 473.9c4.687 4.686 12.285 4.686 16.971-.001z"></path></svg>
             </button>
+            <button aria-label="next" class="contenedor-next">
+                <svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="chevron-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512" ><path d="M24.707 38.101L4.908 57.899c-4.686 4.686-4.686 12.284 0 16.971L185.607 256 4.908 437.13c-4.686 4.686-4.686 12.284 0 16.971L24.707 473.9c4.686 4.686 12.284 4.686 16.971 0l209.414-209.414c4.686-4.686 4.686-12.284 0-16.971L41.678 38.101c-4.687-4.687-12.285-4.687-16.971 0z"></path></svg>
+            </button>     
         </div>
     </section>
     <script src="./js/glider.min.js"></script>
