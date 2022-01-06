@@ -244,7 +244,7 @@ template {
   color: #bebaba;
   font-size: 0.72rem;
   text-decoration: none;
-  letter-spacing: 0.05rem;
+  letter-spacing: 0.02em;
   position: relative;
   overflow: hidden;
 }
@@ -269,7 +269,7 @@ template {
   color: #bebaba;
   font-size: 0.72rem;
   text-decoration: none;
-  letter-spacing: 0.05rem;
+  letter-spacing: 0.02em;
 }
 
 .session {
@@ -299,7 +299,7 @@ template {
   color: #bebaba;
   font-size: 0.72rem;
   text-decoration: none;
-  letter-spacing: 0.05rem;
+  letter-spacing: 0.02em;
 }
 .session__get {
   height: 100%;
@@ -310,12 +310,52 @@ template {
   color: #bebaba;
   font-size: 0.72rem;
   text-decoration: none;
-  letter-spacing: 0.05rem;
+  letter-spacing: 0.02em;
   color: white;
   font-weight: bold;
   letter-spacing: 0.1rem;
 }
 
+.menu-bars {
+  display: none;
+  cursor: pointer;
+  margin-right: 0.9375rem;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+  width: 35px;
+  height: 2px;
+  background-color: #fff;
+  margin: 8px 0;
+  transition: 0.4s;
+}
+
+/* Rotate first bar */
+.change .bar1 {
+  transform: rotate(-45deg) translate(-7px, 8px);
+}
+
+/* Fade out the second bar */
+.change .bar2 {
+  opacity: 0;
+}
+
+/* Rotate last bar */
+.change .bar3 {
+  transform: rotate(45deg) translate(-6px, -8px);
+}
+
+@media screen and (max-width: 1350px) {
+  .navbar__link, .navbar__about, .session {
+    display: none;
+  }
+
+  .menu-bars {
+    display: inline;
+  }
+}
 .carousel {
   width: 100%;
   height: calc(100vh - 3.25rem);
@@ -343,7 +383,7 @@ template {
 .contenedor-next {
   right: 0;
 }
-.contenedor-previous:hover, .contenedor-next:hover {
+.contenedor-previous:active, .contenedor-next:active {
   filter: brightness(100);
 }
 
@@ -376,6 +416,7 @@ template {
   font-weight: bold;
   transform: scaleY(1.3);
   text-shadow: 0px 0.3px 2.2px rgba(0, 0, 0, 0.065), 0px 0.7px 5.3px rgba(0, 0, 0, 0.093), 0px 1.3px 10px rgba(0, 0, 0, 0.115), 0px 2.2px 17.9px rgba(0, 0, 0, 0.137), 0px 4.2px 33.4px rgba(0, 0, 0, 0.165), 0px 10px 80px rgba(0, 0, 0, 0.23);
+  text-align: center;
 }
 .element-link__enlace {
   font-size: 1.3rem;
@@ -393,10 +434,19 @@ template {
     color: black;
     transition: all 0.8s;
   }
+
+  .contenedor-previous:hover, .contenedor-next:hover {
+    filter: brightness(100);
+  }
 }
-@media screen and (max-width: 1350px) {
+@media screen and (max-width: 1300px) {
   .glider-track {
     height: 100%;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .contenedor-next, .contenedor-previous {
+    width: 2.5rem;
   }
 }
 

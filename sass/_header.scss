@@ -4,7 +4,7 @@
     color: var.$text-color-primary;
     font-size: .72rem;
     text-decoration: none;
-    letter-spacing: .05rem;
+    letter-spacing: .02em;
 }
 .header{
     background-color: var.$background-color-secondary;
@@ -66,6 +66,7 @@
     display: flex;
     align-items: center;
     height: 100%;
+
     &__ico{
         width: 1.75rem;
         margin: 0 0.625rem;
@@ -99,5 +100,51 @@
         color: white;
         font-weight: bold;
         letter-spacing: .1rem;
+    }
+}
+
+.menu-bars {
+    // position: fixed;
+    // top: 1rem;
+    // right: 2rem;
+    // z-index: 10;
+    display: none;
+    cursor: pointer;
+    margin-right: 0.9375rem;
+  }
+  
+  .bar1,
+  .bar2,
+  .bar3 {
+    width: 35px;
+    height: 2px;
+    background-color: #fff;
+    margin: 8px 0;
+    transition: 0.4s;
+  }
+  
+  /* Rotate first bar */
+  .change .bar1 {
+    transform: rotate(-45deg) translate(-7px, 8px);
+  }
+  
+  /* Fade out the second bar */
+  .change .bar2 {
+    opacity: 0;
+  }
+  
+  /* Rotate last bar */
+  .change .bar3 {
+    transform: rotate(45deg) translate(-6px, -8px);
+  }
+  
+
+@media screen and (max-width: 1350px) {
+    .navbar__link, .navbar__about, .session{
+        display: none;
+    }
+
+    .menu-bars{
+        display: inline;
     }
 }
